@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\caseman.user.api.props" />
+</Project>
