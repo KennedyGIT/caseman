@@ -15,3 +15,4 @@ C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.user.
 C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.user.api\caseman.user.api\infrastructure\obj\Debug\net8.0\infrastructure.pdb
 C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.user.api\caseman.user.api\infrastructure\obj\Debug\net8.0\infrastructure.genruntimeconfig.cache
 C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.user.api\caseman.user.api\infrastructure\obj\Debug\net8.0\ref\infrastructure.dll
+C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.user.api\caseman.user.api\infrastructure\obj\Debug\net8.0\infrastructure.sourcelink.json

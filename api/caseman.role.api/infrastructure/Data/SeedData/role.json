@@ -1,0 +1,23 @@
+[
+  {
+    "Id": 1,
+    "RoleName": "Admin",
+    "CreatedAt": "2024-11-26T11:12:00Z",
+    "LastUpdatedAt": null,
+    "UpdatedBy": null
+  },
+  {
+    "Id": 2,
+    "RoleName": "CaseManager",
+    "CreatedAt": "2024-11-26T11:12:00Z",
+    "LastUpdatedAt": null,
+    "UpdatedBy": null
+  },
+  {
+    "Id": 3,
+    "RoleName": "InstitutionUser",
+    "CreatedAt": "2024-11-26T11:12:00Z",
+    "LastUpdatedAt": null,
+    "UpdatedBy": null
+  }
+]

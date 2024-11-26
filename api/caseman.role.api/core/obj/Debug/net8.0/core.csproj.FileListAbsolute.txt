@@ -1,0 +1,13 @@
+C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.role.api\core\obj\Debug\net8.0\core.csproj.AssemblyReference.cache
+C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.role.api\core\obj\Debug\net8.0\core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.role.api\core\obj\Debug\net8.0\core.AssemblyInfoInputs.cache
+C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.role.api\core\obj\Debug\net8.0\core.AssemblyInfo.cs
+C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.role.api\core\obj\Debug\net8.0\core.csproj.CoreCompileInputs.cache
+C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.role.api\core\obj\Debug\net8.0\core.sourcelink.json
+C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.role.api\core\bin\Debug\net8.0\core.deps.json
+C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.role.api\core\bin\Debug\net8.0\core.dll
+C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.role.api\core\bin\Debug\net8.0\core.pdb
+C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.role.api\core\obj\Debug\net8.0\core.dll
+C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.role.api\core\obj\Debug\net8.0\refint\core.dll
+C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.role.api\core\obj\Debug\net8.0\core.pdb
+C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.role.api\core\obj\Debug\net8.0\ref\core.dll
