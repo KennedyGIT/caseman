@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("caseman.role.api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8d564718b58d79f87ea48eeea1eef2fa5cd7f69")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59022d9942bac7a599fb2d16f9c7365637185c87")]
 [assembly: System.Reflection.AssemblyProductAttribute("caseman.role.api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("caseman.role.api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

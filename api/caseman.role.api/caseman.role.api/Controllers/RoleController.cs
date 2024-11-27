@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace caseman.role.api.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class RoleController : BaseApiController
     {
         private readonly IGenericRepository<Role> _rolesRepo;
@@ -83,14 +83,14 @@ namespace caseman.role.api.Controllers
 
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ActionResult), StatusCodes.Status200OK)]
         public async Task<ActionResult<ApiResponse>> CreateRole(CreateRoleDto roleDto)
         {
             var spec = new RoleSpecParams() { Search = roleDto.RoleName };
 
             var existingRole = await _rolesRepo.GetEntityWithSpec(new RolesWithFiltersSpecification(spec));
 
-            if (existingRole != null) return BadRequest(new ApiResponse(404, $"Role Name {roleDto.RoleName} already exists"));
+            if (existingRole != null) return BadRequest(new ApiResponse(400, $"Role Name {roleDto.RoleName} already exists"));
 
             roleDto.CreatedBy = User.Identity.Name;
 
