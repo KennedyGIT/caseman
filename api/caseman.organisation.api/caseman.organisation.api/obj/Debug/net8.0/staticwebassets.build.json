@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "1k5mlLFYHoUTCNEN0CqwrbSSeBNrxIpJ4RFJ+oOu2B8=",
+  "Source": "caseman.organisation.api",
+  "BasePath": "_content/caseman.organisation.api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

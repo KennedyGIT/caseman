@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("caseman.user.api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59022d9942bac7a599fb2d16f9c7365637185c87")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("caseman.user.api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("caseman.user.api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

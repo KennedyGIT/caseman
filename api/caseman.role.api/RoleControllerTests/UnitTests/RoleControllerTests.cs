@@ -23,7 +23,7 @@ namespace RoleControllerTests.UnitTests
         private Mock<IUnitOfWork> _unitOfWorkMock;
         private RoleController _controller;
 
-     
+
         public RoleControllerTests()
         {
             _fixture = new Fixture().Customize(new AutoMoqCustomization());
@@ -66,11 +66,11 @@ namespace RoleControllerTests.UnitTests
             var okResult = Assert.IsType<OkObjectResult>(result.Result);
             var pagination = Assert.IsType<Pagination<RoleDtoToReturn>>(okResult.Value);
             Assert.Equal(rolesDto.Count, pagination.Data.Count);
-        
+
         }
 
         [Fact]
-        public async Task GetRole_ReturnsNotFound_WhenRoleDoesNotExist() 
+        public async Task GetRole_ReturnsNotFound_WhenRoleDoesNotExist()
         {
 
             //Arrange
@@ -88,11 +88,11 @@ namespace RoleControllerTests.UnitTests
         }
 
         [Fact]
-        public async Task UpdateRole_ReturnsOkResult_WhenRoleIsUpdated() 
+        public async Task UpdateRole_ReturnsOkResult_WhenRoleIsUpdated()
         {
             //Arrange 
             var roleId = _fixture.Create<int>();
-            var role = _fixture.Create<Role>(); 
+            var role = _fixture.Create<Role>();
             var updateRoleDto = _fixture.Create<UpdateRoleDto>();
             _rolesRepoMock.Setup(repo => repo.GetEntityWithSpec(It.IsAny<ISpecification<Role>>())).ReturnsAsync(role);
             _rolesRepoMock.Setup(repo => repo.Update(It.IsAny<Role>()));
@@ -185,5 +185,6 @@ namespace RoleControllerTests.UnitTests
             Assert.Equal(400, createdAtActionResult.StatusCode);
         }
 
-        
+
+    }
 }
