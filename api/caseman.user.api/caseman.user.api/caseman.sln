@@ -23,13 +23,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoleControllerTests", "..\.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "organisation.api", "organisation.api", "{D7753358-B2F5-4321-BACD-54C686A228B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "caseman.organisation.api", "..\..\caseman.organisation.api\caseman.organisation.api\caseman.organisation.api.csproj", "{7836005B-B84D-4C33-833E-004B10FBB780}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "caseman.organisation.api", "..\..\caseman.organisation.api\caseman.organisation.api\caseman.organisation.api.csproj", "{7836005B-B84D-4C33-833E-004B10FBB780}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "infrastructure", "..\..\caseman.organisation.api\infrastructure\infrastructure.csproj", "{6991AE7C-1362-4F8D-B1D2-D784FD1B814E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "infrastructure", "..\..\caseman.organisation.api\infrastructure\infrastructure.csproj", "{6991AE7C-1362-4F8D-B1D2-D784FD1B814E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "core", "..\..\caseman.organisation.api\core\core.csproj", "{EC2C8547-1936-4D1A-8214-D2ACF1835611}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "core", "..\..\caseman.organisation.api\core\core.csproj", "{EC2C8547-1936-4D1A-8214-D2ACF1835611}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganisationControllerTests", "..\..\caseman.organisation.api\OrganisationControllerTests\OrganisationControllerTests.csproj", "{35AC129B-0988-403B-91B5-822EAE75E2C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrganisationControllerTests", "..\..\caseman.organisation.api\OrganisationControllerTests\OrganisationControllerTests.csproj", "{35AC129B-0988-403B-91B5-822EAE75E2C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "caseman.gateway.api", "..\..\caseman.gateway.api\caseman.gateway.api\caseman.gateway.api.csproj", "{05004467-DA18-457E-A0C5-195F9B51E463}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{35AC129B-0988-403B-91B5-822EAE75E2C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35AC129B-0988-403B-91B5-822EAE75E2C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35AC129B-0988-403B-91B5-822EAE75E2C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05004467-DA18-457E-A0C5-195F9B51E463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05004467-DA18-457E-A0C5-195F9B51E463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05004467-DA18-457E-A0C5-195F9B51E463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05004467-DA18-457E-A0C5-195F9B51E463}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

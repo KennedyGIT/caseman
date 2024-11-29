@@ -5,7 +5,7 @@ namespace core.Specifications
     public class UsersWithInstitutionAndRoleSpecification : BaseSpecification<AppUser>
     {
         public UsersWithInstitutionAndRoleSpecification(UserSpecParams userParams) : base(x => (
-        (string.IsNullOrEmpty(userParams.Search))) || x.FirstName.ToLower().Contains(userParams.Search) || x.LastName.ToLower().Contains(userParams.Search) || x.Email.ToLower().Contains(userParams.Search) || x.Institution.ToLower().Contains(userParams.Search) && (!string.IsNullOrEmpty(userParams.Role) || x.Role.ToLower() == userParams.Role))
+        (string.IsNullOrEmpty(userParams.Search))) || x.FirstName.ToLower().Contains(userParams.Search) || x.LastName.ToLower().Contains(userParams.Search) || x.Email.ToLower().Contains(userParams.Search) || x.Institution.ToLower().Contains(userParams.Search) || x.Role.ToLower().Contains(userParams.Search))
         {
             AddOrderBy(x => x.FirstName);
             ApplyPaging(userParams.PageSize * (userParams.PageIndex - 1),

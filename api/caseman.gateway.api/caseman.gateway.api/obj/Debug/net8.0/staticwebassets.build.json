@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Ol/iyKB/W0DOxVuwu9p55w7szEv7NvQ64ZxcjoUV+EA=",
+  "Source": "caseman.gateway.api",
+  "BasePath": "_content/caseman.gateway.api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

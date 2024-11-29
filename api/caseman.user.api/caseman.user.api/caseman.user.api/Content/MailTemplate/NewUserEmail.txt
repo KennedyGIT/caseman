@@ -277,8 +277,16 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 										<tr>
 											<td>				
 												
-												<h5 class="">Token:</h5>
-												<p class=""> #Token</p>
+												<h5 class="">Password:</h5>
+												<p class=""> #Password</p>
+																	
+											</td>
+										</tr>
+										<tr>
+											<td>				
+												
+												<h5 class="">Role:</h5>
+												<p class=""> #Role</p>
 																	
 											</td>
 										</tr>

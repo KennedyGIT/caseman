@@ -15,7 +15,7 @@ namespace caseman.user.api.Dtos
         [EmailAddress]
         public string Email { get; set; }
 
-        public string Institution { get; set; }
+        public string? Institution { get; set; }
 
         public string Role { get; set; }
 

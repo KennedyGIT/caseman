@@ -214,20 +214,20 @@ namespace caseman.user.api.Controllers
         }
 
         [Authorize]
-        [HttpPut("updateUser")]
-        public async Task<ActionResult<ApiResponse>> UpdateUser(UpdateUserDto updateUserDto)
+        [HttpPut("{id}")]
+        public async Task<ActionResult<ApiResponse>> UpdateUser(string id, UpdateUserDto updateUserDto)
         {
-            if (!CheckEmailExistsAsync(updateUserDto.Email).Result.Value)
-            {
-                return new NotFoundObjectResult(new ApiValidationErrorResponse
-                { Errors = new[] { "Email address does not exist" } });
-            }
 
-            var appUser = await userManager.Users.SingleOrDefaultAsync(x => x.Email.ToLower() == updateUserDto.Email.ToLower());
+            var existingUser = await userManager.Users.FirstOrDefaultAsync(x => x.Id == id);  
 
-            var updatedUser = mapper.Map<AppUser>(updateUserDto);
+            if (existingUser == null) { throw new Exception("user does not exist"); }
 
-            var result = await userManager.UpdateAsync(updatedUser);
+            existingUser.Role = updateUserDto.Role;
+            existingUser.FirstName = updateUserDto.FirstName;
+            existingUser.LastName = updateUserDto.LastName;
+            existingUser.Institution = updateUserDto.Institution;
+
+            var result = await userManager.UpdateAsync(existingUser);
 
             if (result.Succeeded)
             {
