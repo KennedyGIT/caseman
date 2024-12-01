@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OrganisationControllerTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9511286ef9cfc9d2d31c3e6d6b7181f8d89e0933")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a938b68829191e9e161a4b4aa985db40f68c764a")]
 [assembly: System.Reflection.AssemblyProductAttribute("OrganisationControllerTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OrganisationControllerTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
