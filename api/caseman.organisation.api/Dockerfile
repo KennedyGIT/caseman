@@ -27,36 +27,36 @@ COPY caseman.organisation.api/infrastructure/infrastructure.csproj caseman.organ
 COPY caseman.organisation.api/core/core.csproj caseman.organisation.api/core/core.csproj
 COPY caseman.organisation.api/OrganisationControllerTests/OrganisationControllerTests.csproj caseman.organisation.api/OrganisationControllerTests/OrganisationControllerTests.csproj
 
-#GATEWAY API
+# GATEWAY API
 COPY caseman.gateway.api/caseman.gateway.api/caseman.gateway.api.csproj caseman.gateway.api/caseman.gateway.api/caseman.gateway.api.csproj
 
 # Restore package dependencies using the .NET CLI
 RUN dotnet restore caseman.sln
 
 # Copy the application folders from the host to the container
-COPY caseman.user.api/caseman.user.api/caseman.user.api  caseman.user.api/caseman.user.api/caseman.user.api
-COPY caseman.user.api/caseman.user.api/core caseman.user.api/caseman.user.api/core
-COPY caseman.user.api/caseman.user.api/infrastructure caseman.user.api/caseman.user.api/infrastructure
+COPY caseman.organisation.api/caseman.organisation.api  caseman.organisation.api/caseman.organisation.api
+COPY caseman.organisation.api/core caseman.organisation.api/core
+COPY caseman.organisation.api/infrastructure caseman.organisation.api/infrastructure
+COPY caseman.organisation.api/OrganisationControllerTests caseman.organisation.api/OrganisationControllerTests
 
 # Set the working directory to /api/caseman.user.api/caseman.user.api
-WORKDIR /api/caseman.user.api/caseman.user.api
+WORKDIR /api/caseman.organisation.api/caseman.organisation.api
 
 # Build the application in Release mode and output to /api/caseman.user.api/caseman.user.api/out
-RUN dotnet publish caseman.user.api.csproj -c Release -o /api/caseman.user.api/caseman.user.api/out
+RUN dotnet publish -c Release -o /api/caseman.organisation.api/caseman.organisation.api/out
 
 # Switch to a different base image for the runtime stage
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 
-# Set the working directory to /app
+# Set the working directory to /api
 WORKDIR /api
 
 # Copy the published output from the build stage to the runtime image
-COPY --from=build /api/caseman.user.api/caseman.user.api/out .
+COPY --from=build /api/caseman.organisation.api/caseman.organisation.api/out .
 
 # Specify the entry point for the container (the main application)
-ENTRYPOINT ["dotnet", "caseman.user.api.dll"]
+ENTRYPOINT ["dotnet", "caseman.organisation.api.dll"]
 
-#Use the command to create the docker image from the instructions below 
-# docker build -f path/to/Dockerfile -t image_tag .
-
-
+# Command to build  this docker file will be ->  docker build -f caseman.role.api/caseman.role.api/Dockerfile -t [NameoftheImageInLowerCase] .
+# Make sure you run the command from the root folder i.e where the solution file is or where the dockercompose file will be which is usually 
+# where the project solution file is 

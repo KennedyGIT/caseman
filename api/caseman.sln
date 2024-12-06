@@ -15,6 +15,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "infrastructure", "caseman.user.api\caseman.user.api\infrastructure\infrastructure.csproj", "{0AA58DBE-3D22-40F2-B63F-39310413C7B2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "role.api", "role.api", "{B42FC29C-F706-422A-BD62-5EAC6F274D47}"
+	ProjectSection(SolutionItems) = preProject
+		caseman.user.api\caseman.user.api\Dockerfile = caseman.user.api\caseman.user.api\Dockerfile
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "caseman.role.api", "caseman.role.api\caseman.role.api\caseman.role.api.csproj", "{C6E5E8E2-0B0D-459C-BCE4-24ABC2861595}"
 EndProject
@@ -25,6 +28,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoleControllerTests", "caseman.role.api\RoleControllerTests\RoleControllerTests.csproj", "{A20A99A3-8061-48D7-AFBE-B4A892A45ED0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "organisation.api", "organisation.api", "{D7753358-B2F5-4321-BACD-54C686A228B4}"
+	ProjectSection(SolutionItems) = preProject
+		caseman.organisation.api\Dockerfile = caseman.organisation.api\Dockerfile
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "caseman.organisation.api", "caseman.organisation.api\caseman.organisation.api\caseman.organisation.api.csproj", "{7836005B-B84D-4C33-833E-004B10FBB780}"
 EndProject
@@ -35,6 +41,11 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrganisationControllerTests", "caseman.organisation.api\OrganisationControllerTests\OrganisationControllerTests.csproj", "{35AC129B-0988-403B-91B5-822EAE75E2C5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "caseman.gateway.api", "caseman.gateway.api\caseman.gateway.api\caseman.gateway.api.csproj", "{05004467-DA18-457E-A0C5-195F9B51E463}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4F778947-BE69-4EEE-ABAE-6B9C897FD350}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

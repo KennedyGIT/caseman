@@ -34,7 +34,8 @@ COPY caseman.gateway.api/caseman.gateway.api/caseman.gateway.api.csproj caseman.
 RUN dotnet restore caseman.sln
 
 # Copy the application folders from the host to the container
-COPY caseman.user.api/caseman.user.api/caseman.user.api  caseman.user.api/caseman.user.api/caseman.user.api
+COPY caseman.user.api/caseman.user.api/caseman.user.api   caseman.user.api/caseman.user.api/caseman.user.api
+COPY caseman.user.api/caseman.user.api/caseman.user.api/Content /api/caseman.user.api/caseman.user.api/caseman.user.api/Content
 COPY caseman.user.api/caseman.user.api/core caseman.user.api/caseman.user.api/core
 COPY caseman.user.api/caseman.user.api/infrastructure caseman.user.api/caseman.user.api/infrastructure
 
@@ -53,9 +54,11 @@ WORKDIR /api
 # Copy the published output from the build stage to the runtime image
 COPY --from=build /api/caseman.user.api/caseman.user.api/caseman.user.api/out .
 
+# Copy the Content directory to the runtime image
+COPY --from=build /api/caseman.user.api/caseman.user.api/caseman.user.api/Content /api/Content
+
 # Specify the entry point for the container (the main application)
 ENTRYPOINT ["dotnet", "caseman.user.api.dll"]
 
-# Command to run this docker file will be ->  docker build -f caseman.user.api/caseman.user.api/Dockerfile -t [NameoftheImageInLowerCase] .
-# Make sure you run the command from the root folder i.e where the solution file is or where the dockercompose file will be which is usually 
-# where the project solution file is 
+# Command to build this Dockerfile
+# docker build -f caseman.user.api/caseman.user.api/Dockerfile -t [NameoftheImageInLowerCase] .

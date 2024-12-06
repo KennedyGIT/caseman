@@ -36,3 +36,4 @@ C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.gatew
 C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.gateway.api\caseman.gateway.api\obj\Debug\net8.0\caseman.gateway.api.pdb
 C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.gateway.api\caseman.gateway.api\obj\Debug\net8.0\caseman.gateway.api.genruntimeconfig.cache
 C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.gateway.api\caseman.gateway.api\obj\Debug\net8.0\ref\caseman.gateway.api.dll
+C:\Kennedy Projects\Self Development\Projects\case-mgt-app\app\api\caseman.gateway.api\caseman.gateway.api\bin\Debug\net8.0\appsettings.Docker.json
